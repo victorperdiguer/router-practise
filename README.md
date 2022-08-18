@@ -6,6 +6,7 @@ To start, you only need to run the following:
 
 ```bash
 npm install
+npm start
 ```
 
 ---
