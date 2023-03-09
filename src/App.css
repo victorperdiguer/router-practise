@@ -2,3 +2,12 @@ div {
   text-align: center;
   padding: 10px;
 }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction:row;
+  gap: 40px;
+  justify-content: center;
+}
