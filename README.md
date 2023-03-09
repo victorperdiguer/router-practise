@@ -32,7 +32,7 @@ Right now, our <code>App.js</code> component is only displaying the <code>Home</
 
 - Create a `Navbar` component to be able to access those routes, and import it into the App.js file.
 
-> ⚠️ When doing the navbar also remember to import the Link from 'react-router-dom'.
+> ⚠️ When doing the navbar also remember to import the NavLink from 'react-router-dom'. Think about what happens when the link is active ;)
 
 When you finish this iteration, **you should be able to navigate through the different views of the app with your navbar**.
 
@@ -93,7 +93,7 @@ export default App;
 components/Navbar.jsx
 ```js
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function Navbar() {
   return (
@@ -118,8 +118,8 @@ export default function Projects() {
       <p>I have separated my projects into two categories: games I have designed and developed, and applications I have programmed.</p>
       <nav>
         <ul>
-          <li><Link to="/projects/games">See games</Link></li>
-          <li><Link to="/projects/apps">See apps</Link></li>
+          <li><NavLink to="/projects/games">See games</NavLink></li>
+          <li><NavLink to="/projects/apps">See apps</NavLink></li>
         </ul>
       </nav>
       <Outlet />
